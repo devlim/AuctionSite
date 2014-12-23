@@ -1,0 +1,262 @@
+/*Reset*/
+*{margin:0; padding:0;}
+a{text-decoration:none; color:#000;}
+
+/*General*/
+h1{
+	font-family:"BebasNeueRegular";
+	margin-bottom:10px;
+}
+body{
+	min-height:800px;
+	font-family:"maven Pro";
+	font-size:14px;
+}
+p{
+	line-height:21px;
+	margin-bottom:10px;
+}
+/*Comman*/
+.logoWrapper, .loginWrapper, .contentWrapper, .footerWrapper{
+	width:100%;
+}
+.content, .login, .logo, .footer{
+	width:960px;
+	margin:0 auto;
+}
+.loginWrapper{
+	background:#000;	
+}
+
+/*Misc*/
+.error, .notice{
+	padding:10px 15px;
+	margin:25px 0;
+	position:relative;
+}
+.error{
+	background:#FF8585;
+}
+.notice{
+	background:#FFE285;
+}
+.clear{
+	clear:both;
+}
+.notice #closeMsg{background:#FF8585; color:#FFF;}
+.error #closeMsg{background:#FFE285;color:#000;}
+#closeMsg{
+	position:absolute;
+	right:0;
+	top:0;
+	display:inline-block;
+	height:15px;
+	width:15px;
+	font-size:12px;
+	line-height:15px;
+	text-align:center;
+}
+
+/*Login*/
+.login{
+	height:30px;
+	line-height:30px;
+	background:#000;
+}
+.login a{
+	color:#fff;
+}
+.login p{
+	color:#fff;
+}
+.login form p, .login p{
+	float:left;
+	margin-right:25px;
+	line-height:30px;
+}
+.login form label{
+	color:#fff;
+}
+.login form p input[type="submit"]{
+	line-height:30px;
+	margin-top:5px;
+	width:80px;
+}
+
+/*Logo*/
+.logo h1{
+	font-size:130px;
+	text-align:center;
+	margin-bottom:0;
+	margin:0 auto;
+	width:500px;
+}
+.logo h1 a{color:#000;}
+/*Nav*/
+.nav{
+	width:100%;
+	padding:1px 0;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+.nav ul{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	text-align:center;
+	padding:3px 0;
+	font-size:14px;
+}
+.nav ul li{
+	display:inline-block;
+	padding: 3px 35px;
+	position:relative;
+}
+.nav ul li .submenu{
+	min-width:300px;
+	left:-9999px;
+	position:absolute;
+	text-align:left;
+	top:25px;
+	background:#fff;
+	background:rgba(255,255,255,0.9);
+	border:1px solid #000;
+	z-index:1;
+}
+.nav ul li:hover .submenu{
+	left:0;
+}
+.nav ul li .submenu:hover{
+	left:0;
+}
+/*Content*/
+.content{
+	margin-top:30px;
+	min-height:500px;
+}
+.content{
+	overflow:auto;
+}
+
+/*Footer*/
+.footerWrapper{
+	margin-top:50px;
+}
+.footer{
+	border-top:1px solid #000;
+}
+.footer p{
+	text-align:right;
+	font-size:10px;
+}
+
+/*form*/
+.form{
+	width:100%;
+}
+.form p{
+	clear:left;
+	margin-bottom:10px;
+}
+.form p label{
+	width:150px;
+	display:block;
+	float:left;
+}
+.form p input[type="text"], .form p input[type="password"]{
+	width:300px;
+	padding:3px 10px;
+}
+.form p textarea{
+	width:300px;
+	height:100px;
+}
+
+/*Item.php*/
+.itemimg{
+	width:400px;
+	border:5px solid #000;
+	border:5px solid rgba(0,0,0,0.5);
+	overflow:hidden;
+	float:left;
+}
+.itemimg img{
+	width:400px;
+}
+.itemdesc{
+	float:right;
+	width:500px;
+}
+.itemdesc p span{
+	color:#0050B8;
+	display:block;
+}
+.itemdesc .warning{
+	background:#FF8585;
+	padding:5px 10px;
+}
+.bidhistory{
+	margin-top:80px;
+	background:#EEE;
+	padding:20px 0 30px 0;
+	
+}
+.bidhistory table{
+	width:90%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+.bidhistory table tr td{
+	border-top:1px solid #AAA;
+	border-bottom:1px solid #AAA;
+	text-align:center;
+	padding:7px 0;
+}
+.bidhistory table caption{
+	border-bottom:1px dashed #000;
+	width:50%;
+	margin:10px auto;
+}
+.bidhistory table caption h1{margin-bottom:0;}
+.bidhistory table tr:hover td{
+	background:#DDD;
+}
+.bidhistory table tr th{
+	padding:7px 0;
+}
+.itemdesc p span#hour, .itemdesc p span#min, .itemdesc p span#second{
+	display:inline-block;
+	margin:0;
+	color:#000;
+}
+
+/*category.php*/
+.item{
+	width:318px;
+	float:left;
+	border:1px solid #DDD;
+	padding:20px 0;
+}
+.item:hover{
+	background:#F3F3F3;
+}
+.item .itemImage{
+	margin: 0 auto 15px auto;
+	width:200px;
+	height:200px;
+	overflow:hidden;
+	border:3px solid #858585;
+}
+.item .itemImage img{
+	width:100%;
+}
+.item p span{
+	margin-right:15px;
+	display:inline-block;
+	width:65px;
+	color:#0050B8;
+}
+.item p{
+	margin-bottom:0;
+	padding-left:15px;
+}
+.item form{padding-bottom:15px;}
